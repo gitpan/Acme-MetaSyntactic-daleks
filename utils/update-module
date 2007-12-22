@@ -8,7 +8,7 @@ open(MODULE, $mod_path) or die "can't read '$mod_path': $!";
 my @file = grep { /^package/ .. /^__DATA__/ } <MODULE>;
 close(MODULE);
 
-push @file, map { "$_\n" } Acme::MetaSyntactic::daleks->remote_list();
+push @file, map { "$_\n" } "# names", Acme::MetaSyntactic::daleks->remote_list();
 
 open(MODULE, ">$mod_path") or die "can't write '$mod_path': $!";
 print MODULE @file;

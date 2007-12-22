@@ -5,6 +5,7 @@ META.yml
 Makefile.PL
 README
 lib/Acme/MetaSyntactic/daleks.pm
+eg/metadaleks
 utils/update-module
 t/00-load.t
 t/ams-01load.t

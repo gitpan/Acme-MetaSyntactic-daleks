@@ -1,5 +1,9 @@
-Revision history for Acme-MetaSyntactic-daleks
+          ==[ EXTERMINATION PLAN ]==
 
-0.01    Date/time
-        First version, released on an unsuspecting world.
+] Phase 1.00 - 2007.12.21
+      -- First release on the CPAN.
 
+] Phase 1.01 - 2007.12.22
+      -- Exterminate FAIL reports from CPAN Testers.
+      -- Exterminate multiple undersores in movie names.
+      -- Improved kwalitee to fool puny hu-mans.
