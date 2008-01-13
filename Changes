@@ -7,3 +7,6 @@
       -- Exterminate FAIL reports from CPAN Testers.
       -- Exterminate multiple undersores in movie names.
       -- Improved kwalitee to fool puny hu-mans.
+
+] Phase 1.02 - 2008.01.13
+      -- Exterminate more FAIL reports from CPAN Testers.

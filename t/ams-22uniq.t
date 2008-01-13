@@ -2,6 +2,7 @@ use strict;
 use Test::More;
 use Acme::MetaSyntactic;
 
+plan skip_all => "Only useful to the author" unless -d "releases";
 my @themes = grep { !/^(?:any)/ } Acme::MetaSyntactic->themes;
 my @metas;
 
