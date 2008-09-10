@@ -6,7 +6,7 @@ use vars qw(%Remote);
 
 {
     no strict "vars";
-    $VERSION = '1.02';
+    $VERSION = '1.03';
     @ISA = qw(Acme::MetaSyntactic::List);
 }
 
@@ -34,7 +34,7 @@ Acme::MetaSyntactic::daleks - EXTERMINATE! EXTERMINATE! EXTERMINATE!
 
 =head1 VERSION
 
-Version 1.02
+Version 1.03
 
 =head1 SYNOPSIS
 

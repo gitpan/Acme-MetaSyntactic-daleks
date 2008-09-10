@@ -15,7 +15,6 @@ t/ams-21format.t
 t/ams-22uniq.t
 t/ams-23length.t
 t/ams-24data.t
-t/ams-51useall.t
 t/ams-90up2date.t
 t/meta-daleks.t
 t/pod-coverage.t
