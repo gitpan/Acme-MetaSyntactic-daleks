@@ -1,6 +1,6 @@
 ---
 name: Acme-MetaSyntactic-daleks
-version: 1.03
+version: 1.04
 author:
   - 'Sebastien Aperghis-Tramoni <sebastien@aperghis.net>'
 abstract: EXTERMINATE! EXTERMINATE! EXTERMINATE!
@@ -14,7 +14,7 @@ build_requires:
 provides:
   Acme::MetaSyntactic::daleks:
     file: lib/Acme/MetaSyntactic/daleks.pm
-    version: 1.03
+    version: 1.04
 generated_by: Module::Build version 0.2808
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html

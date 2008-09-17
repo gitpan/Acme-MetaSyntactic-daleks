@@ -6,7 +6,7 @@ use vars qw(%Remote);
 
 {
     no strict "vars";
-    $VERSION = '1.03';
+    $VERSION = '1.04';
     @ISA = qw(Acme::MetaSyntactic::List);
 }
 
@@ -34,7 +34,7 @@ Acme::MetaSyntactic::daleks - EXTERMINATE! EXTERMINATE! EXTERMINATE!
 
 =head1 VERSION
 
-Version 1.03
+Version 1.04
 
 =head1 SYNOPSIS
 
@@ -46,8 +46,10 @@ A list of movies for the Daleks. A collective work of C<#perl>.
 See L<http://use.perl.org/~statico/journal/21689>
 
 I've tried to remove all the duplicates and comments I could find, 
-but there are probably still a few left. Don't hesitate to send 
-patch to remove wrong entries or to propose new entries.
+but there are probably still a few left. The source file used to
+generate this module is located at L<http://maddingue.org/daleks/movies.txt>.
+Don't hesitate to send patch to remove duplicate or wrong entries,
+or to propose new entries.
 
 =head1 SUPPORT
 
