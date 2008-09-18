@@ -6,7 +6,7 @@ use vars qw(%Remote);
 
 {
     no strict "vars";
-    $VERSION = '1.04';
+    $VERSION = '1.05';
     @ISA = qw(Acme::MetaSyntactic::List);
 }
 
@@ -28,13 +28,15 @@ sub _uniq { return keys %{ { map { $_ => 1 } @_ } } }
 
 __PACKAGE__->init();
 
+q!EXTERMINATE!;
+
 =head1 NAME
 
 Acme::MetaSyntactic::daleks - EXTERMINATE! EXTERMINATE! EXTERMINATE!
 
 =head1 VERSION
 
-Version 1.04
+Version 1.05
 
 =head1 SYNOPSIS
 
@@ -91,8 +93,6 @@ This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
 
 =cut
-
-1; # End of Acme::MetaSyntactic::daleks
 
 __DATA__
 # names
@@ -152,6 +152,7 @@ Amelie_Dalek
 American_Dalek
 Amores_Daleks
 An_American_Dalek_in_Paris
+An_Elastic_Dalek
 And_Now_for_Something_Completely_Dalek
 And_Then_There_Were_Dalek
 Animal_Dalek
@@ -227,6 +228,7 @@ Bring_Up_Dalek
 Brother_Dalek
 Bruce_Lee_The_Dalek_Gang
 Buck_Dalek
+Buffy_the_Daleks_Slayer
 Bulletproof_Dalek
 Butch_Cassidy_and_the_Sundalek_Kid
 Butch_Dalek_and_the_Sungo_Kid
@@ -242,7 +244,6 @@ Casadaleka
 Casual_Dalek
 Cat_on_a_Hot_Tin_Dalek
 Charlie_s_Daleks
-Charlies_Daleks
 Chasing_Dalek
 Cheaper_by_the_Dalek
 Chez_Dalek
@@ -300,6 +301,7 @@ Dalek_by_Law
 Dalek_Canyon
 Dalek_City
 Dalek_Collector
+Dalek_Confess
 Dalek_Considered_Harmful
 Dalek_County_USA
 Dalek_Cozens
@@ -375,6 +377,7 @@ Dalek_Wall
 Dalek_Wedding
 Dalek_Who
 Dalek_Willy
+Dalek_Window
 Dalek_Wish
 Dalek_Witch_2
 Dalek_Witch_Project
@@ -386,6 +389,7 @@ Dalek_and_Daleker
 Dalek_and_Death_on_Long_Island
 Dalek_and_Furious
 Dalek_and_Greg
+Dalek_and_Innocent
 Dalek_and_Kumar_go_to_White_Castle
 Dalek_and_Persuasion
 Dalek_and_Prejudice_obviously
@@ -437,6 +441,7 @@ Dalek_splendor
 Dalek_the_Daleks_and_Dalek_them_with_Daleks
 Dalek_the_Hedgehog
 Dalek_to_Pimlico
+Dalek_to_the_Future
 Dalek_versus_the_Volcano
 Dalek_vs_Jason
 Dalek_vs_Mechadalek
@@ -456,7 +461,6 @@ Dalek_s_Really_Big_Movie
 Dalek_s_list
 Dalek_Interrupted
 Dalek_Queen_of_the_Desert
-Dalek_1138
 Dalek_22
 Dalek_9_P_I
 Dalek_First_Blood_Part_II
@@ -465,6 +469,7 @@ Dalek_The_Exterminating
 Dalek_The_Gathering
 Dalek_The_Hand_of_Fate
 Dalek_the_plunger_of_fate
+Daleka
 DalekDrome
 DalekGate
 Dalek_3
@@ -498,6 +503,7 @@ Dalekheit_451
 Dalekhoe
 Dalekhouse_5
 Dalekian_Pie
+Dalekin_in_the_Rain
 Dalekira
 Dalekjuice
 Dalekless
@@ -526,6 +532,7 @@ Daleks_and_Fog
 Daleks_and_Sense
 Daleks_at_Tiffany_s
 Daleks_at_the_Gate
+Daleks_from_Vienna
 Daleks_for_Dummies
 Daleks_in_America
 Daleks_in_Black
@@ -540,6 +547,7 @@ Daleks_of_new_york
 Daleks_of_the_Carribean
 Daleks_of_the_Damned
 Daleks_of_the_Valley
+Daleks_on_a_Train
 Daleks_wide_shut
 Daleks_11
 Daleks_Inc
@@ -547,6 +555,7 @@ Daleks_The_new_beginning
 Dalekshack
 Daleksport
 Dalekspotting
+Dalekstar_Galactica
 Dalekstine
 Dalektastic
 Dalektopia
@@ -639,6 +648,7 @@ Fog_of_War_Eleven_Lessons_from_the_life_of_Robert_S_Dalek
 For_A_Few_Daleks_More
 For_Love_of_the_Dalek
 For_a_Few_Daleks_More
+Foreign_Dalek
 Forget_Dalek
 Forrest_Dalek
 Four_Daleks
@@ -670,20 +680,17 @@ Going_Upriver_The_Long_War_of_John_Dalek
 Gold_Daleks_of_1933
 Goldalek
 GoldenDaleks
-Gone_With_The_Dalek
 Gone_is_60_daleks
 Gone_with_the_Dalek
 Good_Dalek_Hunting
 Good_Daleks_Wear_Black
 Good_Morning_Dalek
-Good_Morning_Daleks
 GoodDaleks
 Goodbye_Dalek
 Grand_Theft_Dalek
 Grand_Theft_Dalek_Jelly_Baby_City
 Green_Grow_the_Daleks
 Gremdaleks
-Gross_Point_Dalek
 Grosse_Point_Dalek
 Groundhog_Dalek
 Guess_Who_s_Coming_To_Dalek
@@ -758,12 +765,14 @@ It_s_a_Mad_Mad_Mad_Dalek
 It_s_a_Mad_Mad_Mad_Mad_Dalek
 It_s_a_Wonderful_Dalek
 Jay_and_Silent_Dalek_strike_back
+Jamaica_Dalek
 Jerry_McDalek
 Jesus_Christ_Superdalek
 Joe_versus_The_Dalek
 Johnny_Dalekly
 Journey_to_the_center_of_the_Dalek
 Judge_Dalek
+Juno_and_the_Dalek
 Kelly_s_Daleks
 Kenneth_Moore_as_Davros_in_Reach_for_the_Daleks
 Kentucky_Fried_Dalek
@@ -783,7 +792,6 @@ Ladder_Dalek
 Ladri_di_Dalek
 Lady_and_the_Dalek
 Last_Exit_to_Dalek
-Last_exit_to_Daleks
 Last_of_the_Daleks
 Laura_Croft_Tomb_Raider_Cradle_of_Dalek
 Law_Order_Special_Daleks_Unit
@@ -802,7 +810,6 @@ Lethal_Dalek
 Life_of_Dalek
 Like_Dalek_For_Chocolate
 Little_Big_Dalek
-Little_Dalek_On_The_Prarie
 Little_Dalek_Wants_to_Fly
 Little_Dalek_on_the_Prairie
 Little_Daleks
@@ -842,18 +849,16 @@ Monsoon_Dalek
 Monty_Python_and_the_Holy_Dalek
 Monty_Python_s_Flying_Dalek
 Monty_Python_s_Life_of_Dalek
-Monty_Pythons_Flying_Dalek
 Mortal_Dalek
 Morvern_Dalek
 Mother_Jugs_and_Daleks
-Mr_Dalek_Goes_To_Washington
 Mr_Dalek_Goes_to_Washington
 Mr_Dalek_s_Opus
 Mr_Dalek_s_Razed_Neighborhood
+Mr_and_Mrs_Dalek
 Mrs_Frisby_and_the_Daleks_of_NIMH
 Much_Ado_About_Dalek
 Mulholland_Dalek
-Mullholand_Dalek
 Mutiny_on_the_Dalek
 My_Big_Fat_Dalek_Wedding
 My_Big_Fat_Greek_Dalek
@@ -885,8 +890,10 @@ No_Dalek_s_Land
 No_Daleks_Barred
 No_10_Things_I_Hate_About_Daleks
 North_Dalek_Forty
+North_by_Northdalek
 Not_Another_Dalek_Movie
 Now_Daleks
+Number_Dalek
 O_Dalek_Where_Art_Thou
 O_Lucky_Dalek
 Of_Daleks_and_Men
@@ -952,6 +959,7 @@ Reservoir_Daleks
 Resident_Dalek
 Revenge_of_the_pink_dalek
 Revolution_Dalek
+Rich_and_Dalek
 Ride_the_High_Dalek
 Rikki_Tikki_Dalek
 Rita_Sue_and_Dalek_too
@@ -976,7 +984,6 @@ Scardalek
 Scared_to_Dalek
 Scary_Dalek
 Schindler_s_Dalek
-Scooby_Daleks
 Scooby_Dalek
 Sea_Dalek
 Secret_Dalek
@@ -985,13 +992,11 @@ Seed_of_Dalek
 Seven_Daleks
 Seven_Brides_for_Seven_Daleks
 Sex_with_daleks
-Sex_Lies_and_Dalektapes
-Sex_lies_and_daleks
+Sex_Lies_and_Dalek
 Sgt_Dalek
 Shadow_of_a_Dalek
 Shall_we_Dalek
 Shallow_Dalek
-Shaun_of_the_Dalek
 Shaun_of_the_Daleks
 She_Wore_a_Yellow_Dalek
 Shipping_Daleks
@@ -999,18 +1004,14 @@ Short_Dalek
 Silent_Dalek
 Sinbad_the_Dalek
 Singin_in_the_Dalek
-Singing_in_the_Dalek
 Sinners_in_the_Hands_of_an_Angry_Dalek
 Sinteen_Daleks
 Six_Days_Seven_Daleks
 Sky_Master_and_the_Dalek_of_Tomorrow
 Slapdalek
 Sling_Dalek
-Slingdalek
 Snow_Daleks
-Snow_White_and_the_7_Daleks
 Snow_White_and_the_Seven_Daleks
-Snowwhite_and_the_Seven_Daleks
 So_I_married_an_Axe_Dalek
 Some_Like_it_Dalek
 Somewhere_over_the_dalek
@@ -1043,7 +1044,6 @@ Surviving_Dalek
 Swallows_and_Daleks
 Swimming_With_Daleks
 SwordDalek
-THe_Polar_Dalek
 Take_Care_of_Daleks
 Take_My_Advice_The_Dalek_and_Dalek_Story
 Talk_Dalek_To_Me
@@ -1056,6 +1056,8 @@ Terminator_3_The_Rise_of_the_Daleks
 Texas_Dalek_Massacre
 That_Obscure_Dalek_of_Desire
 That_Think_You_Dalek
+The_39_D_D_The_39_Steps
+The_39_Daleks
 The_6th_Dalek
 The_Adventures_of_Dalek_Munchausen
 The_Ammityville_Dalek
@@ -1072,7 +1074,6 @@ The_Black_Dalek
 The_Blair_Dalek_Project
 The_Blue_Dalek
 The_Breakfast_Dalek
-The_Breakfast_Daleks
 The_Brothers_Dalekazov
 The_Cable_Dalek
 The_Chronicles_of_Dalek
@@ -1087,6 +1088,7 @@ The_Dalek_After_Tomorrow
 The_Dalek_Always_Rings_Twice
 The_Dalek_Before_Christmas
 The_Dalek_Brothers
+The_Dalek_Case
 The_Dalek_Children
 The_Dalek_Club
 The_Dalek_Collector
@@ -1096,18 +1098,19 @@ The_Dalek_Crystal
 The_Dalek_Effect
 The_Dalek_Escape
 The_Dalek_Express
+The_Dalek_Game
 The_Dalek_Identity
 The_Dalek_Invasion_Of_Earth
 The_Dalek_Job
 The_Dalek_Josey_Wales
 The_Dalek_King
+The_Dalek_Knight
 The_Dalek_Machine
 The_Dalek_Mile
 The_Dalek_Mutiny
 The_Dalek_Nikita
 The_Dalek_Patient
 The_Dalek_Redemption
-The_Dalek_Redepmtion
 The_Dalek_Reloaded
 The_Dalek_Remains_the_Same
 The_Dalek_Returns
@@ -1118,12 +1121,14 @@ The_Dalek_Suicides
 The_Dalek_Supremacy
 The_Dalek_Syndrome
 The_Dalek_Trap
+The_Dalek_Vanishes
 The_Dalek_Upstairs
 The_Dalek_Whisperer
-The_Dalek_Who_Came_In_From_the_Cold
-The_Dalek_Who_Came_To_Dinner
+The_Dalek_Who_Came_to_Dinner
 The_Dalek_Who_Came_in_From_the_Cold
 The_Dalek_Who_Exterminated_Me
+The_Dalek_Who_Knew_Too_Much
+The_Dalek_Who_Leapt_Through_Time
 The_Dalek_Who_Stole_Christmas
 The_Dalek_With_Teh_Golden_Plunger
 The_Dalek_Wore_Tennis_Shoes
@@ -1187,6 +1192,7 @@ The_French_Dalektion
 The_Full_Dalek
 The_Gay_Dalekee
 The_Ghost_and_mrs_Dalek
+The_Girl_Who_Leapt_Through_Dalek
 The_Goddalek
 The_Gods_Must_Be_Daleks
 The_Good_Dalek
@@ -1226,7 +1232,6 @@ The_Magnificent_Dalek
 The_Maltese_Dalek
 The_Man_Who_Shot_Liberty_Dalek
 The_Man_Who_Would_Be_Dalek
-The_Man_With_One_Red_Dalek
 The_Man_in_the_Iron_Dalek
 The_Man_with_One_Red_Dalek
 The_Manchurian_Dalek
@@ -1234,6 +1239,7 @@ The_Marriage_of_Dalek_Von_Braun
 The_Mask_of_Dalek
 The_Midwich_Daleks
 The_Mighty_Daleks
+The_Mountain_Dalek
 The_Mysterious_Mr_Dalek
 The_Name_of_the_Dalek
 The_Neverending_Dalek
@@ -1245,6 +1251,8 @@ The_Ox_bow_Dalek
 The_Palm_Beach_Dalek
 The_Passion_of_the_Dalek
 The_Pink_Dalek
+The_Pleasure_Dalek
+The_Polar_Dalek
 The_President_s_Dalek
 The_Princess_Dalek
 The_Quiet_Dalek
@@ -1281,6 +1289,7 @@ The_Three_Daleks
 The_Times_of_Harvey_Dalek
 The_Titfield_Dalek
 The_Treasure_of_the_Sierra_Dalek
+The_Trouble_with_Dalek
 The_UnDalek
 The_Unbelievable_Dalek
 The_Undearable_Dalek_of_Being
@@ -1294,6 +1303,7 @@ The_Whole_Nine_Daleks
 The_Wicker_Dalek
 The_Wild_Daleks
 The_Wild_World_of_Dalekwoman
+The_Wrong_Dalek
 The_Year_of_Living_Dalekly
 The_business_of_Dalek
 The_count_of_monte_Dalek
@@ -1327,6 +1337,7 @@ To_Kill_a_Mocking_Dalek
 Tom_Dalek
 Tomb_Dalek
 Top_Dalek
+Torn_Dalek
 Trading_Daleks
 Traindaleking
 Training_Dalek
@@ -1363,7 +1374,6 @@ Wayne_s_Dalek
 Weekend_Daleks
 Weird_Dalek
 West_Side_Dalek
-Westside_Dalek
 Whale_Dalek
 What_About_Dalek
 What_Daleks_Beneath
